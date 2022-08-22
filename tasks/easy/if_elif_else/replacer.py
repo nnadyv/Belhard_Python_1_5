@@ -6,7 +6,7 @@
     - искомая строка (search_str)
     - заменяемая строка (replace_str)
 
-если в строке для проверки содержится искомая строка - заменить ее на
+Если в строке для проверки содержится искомая строка - заменить ее на
 заменяемую строку и вернуть результат, если не содержатся, то вернуть "Ошибка!"
 
 ПРИМЕРЫ
@@ -32,7 +32,12 @@ def replacer(check_str: str, search_str: str, replace_str: str) -> str:
     :return: измененная строка для проверки или строка "Ошибка!"
     :rtype: str
     """
-    result = None
+    if search_str in check_str:
+        result1 = check_str.replace(search_str, replace_str)
+        result = result1.capitalize()
+    else:
+        result = "Ошибка!"
+
     return result
 
 
