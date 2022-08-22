@@ -19,7 +19,7 @@ def odd_sum(int_list: list) -> int:
             if element % 2 != 0:
                 summa = element + summa
         else:
-            raise TypeError(f"Все элементы списка должны быть целыми числами")
+            raise TypeError("Все элементы списка должны быть целыми числами")
 
     return summa
 

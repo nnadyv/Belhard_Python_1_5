@@ -11,6 +11,9 @@
 def multiplication_table(n: int) -> list:
     # TODO тут написать код
     result = []
+    for element in range(11):
+        element = element * n
+        result.append(element)
     return result
 
 
